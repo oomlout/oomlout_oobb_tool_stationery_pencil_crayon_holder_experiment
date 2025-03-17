@@ -1,0 +1,24 @@
+# Oomlout oobb tool stationery pencil crayon holder experiment
+
+
+## parts
+
+### base_3_width_2_height_15_mm_depth_3_pencil_crayon_stacked_style_extra
+* link: [/base_3_width_2_height_15_mm_depth_3_pencil_crayon_stacked_style_extra](base_3_width_2_height_15_mm_depth_3_pencil_crayon_stacked_style_extra)  
+![](base_3_width_2_height_15_mm_depth_3_pencil_crayon_stacked_style_extra/3dpr_300.png)  ![](base_3_width_2_height_15_mm_depth_3_pencil_crayon_stacked_style_extra/image_300.jpg)
+ 
+
+### base_3_width_2_height_15_mm_depth_5_pencil_crayon_stacked_style_extra
+* link: [/base_3_width_2_height_15_mm_depth_5_pencil_crayon_stacked_style_extra](base_3_width_2_height_15_mm_depth_5_pencil_crayon_stacked_style_extra)  
+![](base_3_width_2_height_15_mm_depth_5_pencil_crayon_stacked_style_extra/3dpr_300.png)  ![](base_3_width_2_height_15_mm_depth_5_pencil_crayon_stacked_style_extra/image_300.jpg)
+ 
+
+### base_3_width_2_height_9_mm_depth_3_pencil_crayon_beside_style_extra
+* link: [/base_3_width_2_height_9_mm_depth_3_pencil_crayon_beside_style_extra](base_3_width_2_height_9_mm_depth_3_pencil_crayon_beside_style_extra)  
+![](base_3_width_2_height_9_mm_depth_3_pencil_crayon_beside_style_extra/3dpr_300.png)  ![](base_3_width_2_height_9_mm_depth_3_pencil_crayon_beside_style_extra/image_300.jpg)
+ 
+
+### base_5_width_2_height_9_mm_depth_5_pencil_crayon_beside_style_extra
+* link: [/base_5_width_2_height_9_mm_depth_5_pencil_crayon_beside_style_extra](base_5_width_2_height_9_mm_depth_5_pencil_crayon_beside_style_extra)  
+![](base_5_width_2_height_9_mm_depth_5_pencil_crayon_beside_style_extra/3dpr_300.png)  ![](base_5_width_2_height_9_mm_depth_5_pencil_crayon_beside_style_extra/image_300.jpg)
+ 

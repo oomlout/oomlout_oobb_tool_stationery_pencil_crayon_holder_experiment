@@ -112,18 +112,70 @@ def make_scad(**kwargs):
         part_default["full_shift"] = [0, 0, 0]
         part_default["full_rotations"] = [0, 0, 0]
         
-        part = copy.deepcopy(part_default)
-        p3 = copy.deepcopy(kwargs)
-        p3["width"] = 3
-        p3["height"] = 3
-        #p3["thickness"] = 6
-        #p3["extra"] = ""
-        part["kwargs"] = p3
-        nam = "base"
-        part["name"] = nam
-        if oomp_mode == "oobb":
-            p3["oomp_size"] = nam
-        #parts.append(part)
+
+        number_pencil_crayons = [3]
+        styles = ["beside", "stacked"]
+        
+        types = []
+        #3 wide beside
+        typ = {}
+        typ["width"] = 3
+        typ["height"] = 2
+        typ["thickness"] = 9
+        typ["number_pencil_crayon"] = 3
+        typ["style"] = "beside"
+        types.append(typ)
+
+        #3 wide stacked
+        typ = {}
+        typ["width"] = 3
+        typ["height"] = 2
+        typ["thickness"] = 15
+        typ["number_pencil_crayon"] = 3
+        typ["style"] = "stacked"
+        types.append(typ)
+
+        #5 wide beside
+        typ = {}
+        typ["width"] = 5
+        typ["height"] = 2
+        typ["thickness"] = 9
+        typ["number_pencil_crayon"] = 5
+        typ["style"] = "beside"
+        types.append(typ)
+
+        #5 wide stacked
+        typ = {}
+        typ["width"] = 3
+        typ["height"] = 2
+        typ["thickness"] = 15
+        typ["number_pencil_crayon"] = 5
+        typ["style"] = "stacked"
+        types.append(typ)
+
+
+
+        for typ in types:
+            wid = typ.get("width", 1)
+            hei = typ.get("height", 1)
+            thick = typ.get("thickness", 3)
+            style = typ.get("style", "beside")
+            number_pencil_crayon = typ.get("number_pencil_crayon", 3)
+
+            part = copy.deepcopy(part_default)
+            p3 = copy.deepcopy(kwargs)
+            p3["width"] = wid
+            p3["height"] = hei
+            p3["thickness"] = thick
+            p3["number_pencil_crayon"] = number_pencil_crayon
+            p3["style"] = style
+            p3["extra"] = f"{number_pencil_crayon}_pencil_crayon_{style}_style"
+            part["kwargs"] = p3
+            nam = "base"
+            part["name"] = nam
+            if oomp_mode == "oobb":
+                p3["oomp_size"] = nam
+            parts.append(part)
 
 
     kwargs["parts"] = parts
@@ -133,25 +185,29 @@ def make_scad(**kwargs):
     #generate navigation
     if navigation:
         sort = []
-        #sort.append("extra")
-        sort.append("name")
-        sort.append("width")
-        sort.append("height")
-        sort.append("thickness")
+        sort.append("number_pencil_crayon")
+        sort.append("style")
+        #sort.append("extra")        
+        #sort.append("width")
+        #sort.append("height")
+        #sort.append("thickness")
         
         scad_help.generate_navigation(sort = sort)
 
 
 def get_base(thing, **kwargs):
 
-    prepare_print = kwargs.get("prepare_print", False)
+    prepare_print = kwargs.get("prepare_print", True)
     width = kwargs.get("width", 1)
     height = kwargs.get("height", 1)
     depth = kwargs.get("thickness", 3)                    
     rot = kwargs.get("rot", [0, 0, 0])
     pos = kwargs.get("pos", [0, 0, 0])
     extra = kwargs.get("extra", "")
-    
+    style = kwargs.get("style", "")
+    number_pencil_crayon = kwargs.get("number_pencil_crayon", 3)
+
+
     #add plate
     p3 = copy.deepcopy(kwargs)
     p3["type"] = "positive"
@@ -169,11 +225,92 @@ def get_base(thing, **kwargs):
     p3["shape"] = f"oobb_holes"
     p3["both_holes"] = True  
     p3["depth"] = depth
-    p3["holes"] = "perimeter"
+    p3["holes"] = ["top", "bottom"]
     #p3["m"] = "#"
     pos1 = copy.deepcopy(pos)         
     p3["pos"] = pos1
     oobb_base.append_full(thing,**p3)
+
+    #add screw_countersunk
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "n"
+    p3["shape"] = f"oobb_screw_countersunk"
+    p3["depth"] = depth
+    p3["radius_name"] = "m3"
+    p3["nut"] = True
+    #p3["m"] = "#"
+    pos1 = copy.deepcopy(pos)
+    pos1[2] += depth
+    poss = []
+    shift_x = (width-1)/2 * 15
+    shift_y = 0
+    pos11 = copy.deepcopy(pos1)
+    pos11[0] += -shift_x
+    pos11[1] += shift_y
+    pos12 = copy.deepcopy(pos1)
+    pos12[0] += shift_x
+    pos12[1] += shift_y    
+    poss.append(pos11)
+    poss.append(pos12)
+    p3["pos"] = poss
+    oobb_base.append_full(thing,**p3)
+
+    if style == "beside":
+
+        #add pencil crayons
+        p3 = copy.deepcopy(kwargs)
+        p3["type"] = "n"
+        p3["shape"] = f"oobb_cylinder"
+        dep = 175
+        p3["depth"] = dep
+        clear = -0.5
+        pencil_crayon_radius = 7.5/2
+        p3["radius"] = pencil_crayon_radius + clear/2
+        p3["m"] = "#"
+        rot1 = copy.deepcopy(rot)
+        rot1[0] = 90
+        p3["rot"] = rot1
+        pos1 = copy.deepcopy(pos)
+        pos1[2] += dep/2 + depth / 2
+        pos1[1] += dep/2
+        start_x = -((number_pencil_crayon-1)/2) * pencil_crayon_radius * 2
+        for i in range(number_pencil_crayon):
+            pos11 = copy.deepcopy(pos1)
+            pos11[0] += start_x + i * pencil_crayon_radius * 2
+            p3["pos"] = pos11
+            oobb_base.append_full(thing,**p3)
+
+    elif style == "stacked":
+
+        #add pencil crayons
+        p3 = copy.deepcopy(kwargs)
+        p3["type"] = "n"
+        p3["shape"] = f"oobb_cylinder"
+        dep = 175
+        p3["depth"] = dep
+        clear = -0.5
+        pencil_crayon_radius = 7.5/2
+        p3["radius"] = pencil_crayon_radius + clear/2
+        p3["m"] = "#"
+        rot1 = copy.deepcopy(rot)
+        rot1[0] = 90
+        p3["rot"] = rot1
+        pos1 = copy.deepcopy(pos)
+        pos1[2] += dep/2 + depth / 2
+        pos1[1] += dep/2
+        start_x = -(((number_pencil_crayon-1)/2) * pencil_crayon_radius * 2)/2
+        for i in range(number_pencil_crayon):
+            pos11 = copy.deepcopy(pos1)
+            pos11[0] += start_x + i * pencil_crayon_radius            
+            if i % 2 == 1:
+                pos11[2] += pencil_crayon_radius/1.25
+            else:
+                pos11[2] += -pencil_crayon_radius/1.25
+
+
+            p3["pos"] = pos11
+            oobb_base.append_full(thing,**p3)
+
 
     if prepare_print:
         #put into a rotation object
@@ -183,6 +320,7 @@ def get_base(thing, **kwargs):
         return_value_2["typetype"]  = "p"
         pos1 = copy.deepcopy(pos)
         pos1[0] += 50
+        pos1[2] += depth
         return_value_2["pos"] = pos1
         return_value_2["rot"] = [180,0,0]
         return_value_2["objects"] = components_second
@@ -195,9 +333,9 @@ def get_base(thing, **kwargs):
         p3["type"] = "n"
         p3["shape"] = f"oobb_slice"
         pos1 = copy.deepcopy(pos)
-        pos1[0] += -500/2
+        pos1[0] += 0
         pos1[1] += 0
-        pos1[2] += -500/2        
+        pos1[2] += depth/2
         p3["pos"] = pos1
         #p3["m"] = "#"
         oobb_base.append_full(thing,**p3)

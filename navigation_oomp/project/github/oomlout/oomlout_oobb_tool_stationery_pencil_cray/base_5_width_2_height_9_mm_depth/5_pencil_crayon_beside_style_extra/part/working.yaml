@@ -1,0 +1,44 @@
+classification: project
+color: oomlout_oobb_tool_stationery_pencil_cray
+description_extra: 5_pencil_crayon_beside_style_extra
+description_main: base_5_width_2_height_9_mm_depth
+full_rotations:
+- 0
+- 0
+- 0
+full_shift:
+- 0
+- 0
+- 0
+id: project_github_oomlout_oomlout_oobb_tool_stationery_pencil_cray_base_5_width_2_height_9_mm_depth_5_pencil_crayon_beside_style_extra
+id_oobb: oobb_part_oomlout_oobb_tool_stationery_pencil_cray_base_5_width_2_height_9_mm_depth_5_pencil_crayon_beside_style_extra
+kwargs:
+  extra: 5_pencil_crayon_beside_style
+  filter: ''
+  height: 2
+  modes:
+  - 3dpr
+  navigation: true
+  number_pencil_crayon: 5
+  oomp_classification: project
+  oomp_color: oomlout_oobb_tool_stationery_pencil_cray
+  oomp_description_extra: 5_pencil_crayon_beside_style_extra
+  oomp_description_main: base_5_width_2_height_9_mm_depth
+  oomp_manufacturer: ''
+  oomp_mode: project
+  oomp_part_number: ''
+  oomp_run: true
+  oomp_size: oomlout
+  oomp_type: github
+  overwrite: true
+  style: beside
+  thickness: 9
+  typ: all
+  type: oomlout_oobb_tool_stationery_pencil_cray_base
+  width: 5
+manufacturer: ''
+name: base
+part_number: ''
+project_name: C:\gh\oomlout_oobb_tool_stationery_pencil_crayon_holder_experiment
+size: oomlout
+type: github

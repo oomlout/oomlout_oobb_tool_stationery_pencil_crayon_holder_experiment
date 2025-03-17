@@ -1,0 +1,725 @@
+classification: project
+color: oomlout_oobb_tool_stationery_pencil_cray
+description_extra: 3_pencil_crayon_stacked_style_extra
+description_main: base_3_width_2_height_3_mm_depth
+full_rotations:
+- 0
+- 0
+- 0
+full_shift:
+- 0
+- 0
+- 0
+id: project_github_oomlout_oomlout_oobb_tool_stationery_pencil_cray_base_3_width_2_height_3_mm_depth_3_pencil_crayon_stacked_style_extra
+id_oobb: oobb_part_oomlout_oobb_tool_stationery_pencil_cray_base_3_width_2_height_3_mm_depth_3_pencil_crayon_stacked_style_extra
+kwargs:
+  extra: 3_pencil_crayon_stacked_style
+  filter: ''
+  height: 2
+  modes:
+  - 3dpr
+  navigation: false
+  number_pencil_crayon: 3
+  oomp_classification: project
+  oomp_color: oomlout_oobb_tool_stationery_pencil_cray
+  oomp_description_extra: 3_pencil_crayon_stacked_style_extra
+  oomp_description_main: base_3_width_2_height_3_mm_depth
+  oomp_manufacturer: ''
+  oomp_mode: project
+  oomp_part_number: ''
+  oomp_run: false
+  oomp_size: oomlout
+  oomp_type: github
+  overwrite: true
+  style: stacked
+  thickness: 3
+  type: oomlout_oobb_tool_stationery_pencil_cray_base
+  width: 3
+manufacturer: ''
+name: base
+part_number: ''
+project_name: C:\gh\oomlout_oobb_tool_stationery_pencil_crayon_holder_experiment
+size: oomlout
+thing:
+  classification: oobb
+  color: ''
+  components:
+  - - depth: 3
+      extra: 3_pencil_crayon_stacked_style
+      height: 2
+      pos:
+      - 0
+      - 0
+      - 0
+      shape: rounded_rectangle
+      size:
+      - 44
+      - 29
+      - 3
+      type: positive
+      width: 3
+  - - - h: 200
+        inclusion: laser
+        m: ''
+        pos: &id001
+        - -15.0
+        - -7.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos: *id001
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos: *id001
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos: &id002
+        - -15.0
+        - 7.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos: *id002
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos: *id002
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos: &id003
+        - 15.0
+        - -7.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos: *id003
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos: *id003
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos: &id004
+        - 15.0
+        - 7.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos: *id004
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos: *id004
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos: &id005
+        - 15.0
+        - -7.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos: *id005
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos: *id005
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos: &id006
+        - 15.0
+        - 7.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos: *id006
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos: *id006
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos: &id007
+        - -15.0
+        - -7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos: *id007
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos: *id007
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos: &id008
+        - -15.0
+        - 0.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos: *id008
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos: *id008
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos: &id009
+        - -15.0
+        - 7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos: *id009
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos: *id009
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos: &id010
+        - 15.0
+        - -7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos: *id010
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos: *id010
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos: &id011
+        - 15.0
+        - 0.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos: *id011
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos: *id011
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos: &id012
+        - 15.0
+        - 7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos: *id012
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos: *id012
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos: &id013
+        - -15.0
+        - -7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos: *id013
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos: *id013
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos: &id014
+        - -15.0
+        - 0.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos: *id014
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos: *id014
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos: &id015
+        - -15.0
+        - 7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos: *id015
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos: *id015
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos: &id016
+        - 15.0
+        - -7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos: *id016
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos: *id016
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos: &id017
+        - 15.0
+        - 0.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos: *id017
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos: *id017
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos: &id018
+        - 15.0
+        - 7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos: *id018
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos: *id018
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos: &id019
+        - -15.0
+        - -7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos: *id019
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos: *id019
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos: &id020
+        - -15.0
+        - 0.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos: *id020
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos: *id020
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos: &id021
+        - -15.0
+        - 7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos: *id021
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos: *id021
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos: &id022
+        - 15.0
+        - -7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos: *id022
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos: *id022
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos: &id023
+        - 15.0
+        - 0.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos: *id023
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos: *id023
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos: &id024
+        - 15.0
+        - 7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos: *id024
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos: *id024
+        r: 1.5
+        shape: cylinder
+        type: negative
+  components_objects:
+  - depth: 3
+    extra: 3_pencil_crayon_stacked_style
+    filter: ''
+    height: 2
+    modes:
+    - 3dpr
+    navigation: false
+    number_pencil_crayon: 3
+    oomp_classification: project
+    oomp_color: oomlout_oobb_tool_stationery_pencil_cray
+    oomp_description_extra: ''
+    oomp_description_main: ''
+    oomp_manufacturer: ''
+    oomp_mode: project
+    oomp_part_number: ''
+    oomp_run: false
+    oomp_size: oomlout
+    oomp_type: github
+    overwrite: true
+    pos:
+    - 0
+    - 0
+    - 0
+    save_type: none
+    shape: oobb_plate
+    style: stacked
+    thickness: 3
+    type: positive
+    width: 3
+  - both_holes: true
+    depth: 3
+    extra: 3_pencil_crayon_stacked_style
+    filter: ''
+    height: 2
+    holes:
+    - top
+    - bottom
+    modes:
+    - 3dpr
+    navigation: false
+    number_pencil_crayon: 3
+    oomp_classification: project
+    oomp_color: oomlout_oobb_tool_stationery_pencil_cray
+    oomp_description_extra: ''
+    oomp_description_main: ''
+    oomp_manufacturer: ''
+    oomp_mode: project
+    oomp_part_number: ''
+    oomp_run: false
+    oomp_size: oomlout
+    oomp_type: github
+    overwrite: true
+    pos:
+    - 0
+    - 0
+    - 0
+    save_type: none
+    shape: oobb_holes
+    style: stacked
+    thickness: 3
+    type: p
+    width: 3
+  components_string:
+  - oobb_plate_shape_positive_type_3_depth_none_save_type_false_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_3_width_2_height_3_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_oobb_tool_stationery_pencil_cray_oomp_color_3_number_pencil_crayon_stacked_style_3_pencil_crayon_stacked_style_extra
+  - oobb_holes_shape_p_type_3_depth_none_save_type_false_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_3_width_2_height_3_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_oobb_tool_stationery_pencil_cray_oomp_color_3_number_pencil_crayon_stacked_style_3_pencil_crayon_stacked_style_extra_true_both_holes_'top'_'bottom'_holes
+  description: oomlout oobb tool stationery pencil cray base 3x2x3
+  description_extra: 3_pencil_crayon_stacked_style_extra
+  description_main: 3_width_2_height_3_mm_depth
+  extra: 3_pencil_crayon_stacked_style
+  folder: C:\gh\oomlout_oobb_version_4_generated_parts\parts\oobb_part_oomlout_oobb_tool_stationery_pencil_cray_base_3_width_2_height_3_mm_depth_3_pencil_crayon_stacked_style_extra
+  height: 2
+  height_mm: 29
+  id: oobb_part_oomlout_oobb_tool_stationery_pencil_cray_base_3_width_2_height_3_mm_depth_3_pencil_crayon_stacked_style_extra
+  link_main: https://github.com/oomlout/oomlout_oobb_version_4_generated_parts/tree/main/navigation_oomp/oobb/part/oomlout_oobb_tool_stationery_pencil_cray_base/3_width_2_height_3_mm_depth/3_pencil_crayon_stacked_style_extra/part
+  link_redirect: https://github.com/oomlout/oomlout_oobb_version_4_generated_parts/tree/main/parts/oobb_oomlout_oobb_tool_stationery_pencil_cray_base_03_02_03_ex_3_pencil_crayon_stacked_style
+  manufacturer: ''
+  name: Oobb Part Oomlout Oobb Tool Stationery Pencil Cray Base 3 Width 2 Height 3
+    mm Depth 3 Pencil Crayon Stacked Style Extra
+  name_short: Oomlout Oobb Tool Stationery Pencil
+  part_number: ''
+  short_name: ''
+  size: oomlout_oobb_tool_stationery_pencil_cray_base
+  thickness: 3
+  thickness_mm: 3
+  type: part
+  width: 3
+  width_mm: 44
+type: github
